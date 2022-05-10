@@ -455,8 +455,6 @@ margin-left: 93px;
     border-radius: 4px;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
-
-    /* color: #AFB1B8; */
 }
 
 .client-logo {
@@ -464,7 +462,7 @@ margin-left: 93px;
 }
 
 /* ПІДВАЛ */
-
+    /* Контактні дані */
 address {
     font-style: normal;
 }
@@ -506,7 +504,7 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+    /* Підписки на соцмережі */
 .subscription {
     margin-left: 70px;
 }
@@ -554,8 +552,51 @@ address {
 .subscription-link:focus {
     background-color: var(--accent-color);
 }
+    /* Підписка на телеграм */
+.subscribe {
+    margin-left: 93px;
+}
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    }
+
+.subscribe-form {
+    
+}
+
+.subscribe-label {}
+
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    
+    border-radius: 4px;
+}
+
+.subscribe-telegram {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    background-color:#2196F3;
+}
+
+.telegram-icon {
+    margin-left: 10px;
+}
 
 /* Модальне вікно */
+
+    /* Налаштування основи модального вікна */
 .backdrop {
     position: fixed;
     top: 0;
@@ -604,6 +645,8 @@ address {
     height: 11px;
     fill: rgb(0, 0, 0);
 }
+    /* Зміст модального вікна */
+
 
 /* ПОРТФОЛИО СТИЛІЗАЦІЯ ОСНОВНОГО КОНТЕНТУ */
 
