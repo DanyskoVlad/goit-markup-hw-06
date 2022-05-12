@@ -466,12 +466,15 @@
         </div>
 
         <label class="form-group">
-            <input class="checkbox" type="checkbox" name="policy" value=" "/>
-            <svg class="modal-policy-check" width="11" height="8">
-                <use href="./images/sprite.svg#icon-policycheck"></use>
-            </svg>
-            <span class="checkbox-icon"></span>
-            <p class="policy-label">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></p>
+            <div class="subscribe-block">
+                <input class="checkbox" type="checkbox" name="policy" value=" " />
+                <span class="checkbox-icon">
+                    <svg class="modal-policy-check" width="16" height="15">
+                        <use href="./images/sprite.svg#icon-policycheck"></use>
+                    </svg>
+                </span>
+                <p class="policy-label">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></p>
+            </div>
         </label>
         
         <button class="form-button" type="submit">Отправить</button>
