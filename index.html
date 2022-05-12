@@ -412,51 +412,73 @@
                 <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
                 <form class="subscribe-form" action="">
                     <label class="subscribe-label"></label>
-                    <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail" />
-                    <button class="subscribe-telegram" type="button">
-                        Подписаться
-                        <svg class="telegram-icon" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-telegramicon"></use>
-                        </svg>
-                    </button>
+                    <div class="subscribe-block">
+                        <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail" />
+                        <button class="subscribe-telegram" type="button">
+                            Подписаться
+                            <svg class="telegram-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-footertelegram"></use>
+                            </svg>
+                        </button>
                 </form>
+            </div>
         </div>
     </footer>
-    <!-- Модальне вікно -->
+        <!-- Модальне вікно -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-    <!-- Скріпт на модальне вікно -->
+        <!-- Закриття модального вікна -->
     <button type="button" class="modal-close" data-modal-close>
         <svg class="modal-close-button" width="11" height="11">
             <use href="./images/sprite.svg#icon-closelogo"></use>
         </svg>
     </button>
+        <!-- Зміст модального вікна -->
     <form class="modal-form">
-        <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+        <label class="form-group">
+            <span class="form-lable">Имя</span>
+            <input class="form-input" type="text" name="name"/>
+            <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-modaliconfirst"></use>
+            </svg>
+        </label>
+    
+        <label class="form-group">
+            <span class="form-lable">Телефон</span>
+            <input class="form-input" type="tel" name="tel"/>
+            <svg class="modal-form-icon" width="13" height="13">
+                <use href="./images/sprite.svg#icon-modaliconthird"></use>
+            </svg>
+        </label>
+        
+        <label class="form-group">
+            <span class="form-lable">Почта</span>
+            <input class="form-input" type="email" name="email"/>
+            <svg class="modal-form-icon" width="15" height="12">
+                <use href="./images/sprite.svg#icon-modaliconsecond"></use>
+            </svg>
+        </label>
+
         <div class="form-group">
-            <label class="form-lable" for="name">Имя</label>
-            <input class="form-input" type="text" name="name" id="name" />
+            <label class="form-lable" for="">Комментарий</label>
+            <textarea class="form-comment" name="comment" placeholder="Введите текст"></textarea>
         </div>
-        <div  class="form-group">
-            <label class="form-lable" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" />
-        </div>
-        <div  class="form-group">
-            <label class="form-lable" for="email">Почта</label>
-            <input class="form-input" type="email" name="email" id="email" />
-        </div>
-        <div>
-            <label for="">Комментарий</label>
-            <textarea name="comment" placeholder="Введите текст"></textarea>
-        </div>
-        <div>
-            <input type="checkbox" name="policy" value="" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy-link">Условия договора</a></label>
-        </div>
-        <button type="submit">Отправить</button>
+
+        <label class="form-group">
+            <input class="checkbox" type="checkbox" name="policy" value=" "/>
+            <svg class="modal-policy-check" width="11" height="8">
+                <use href="./images/sprite.svg#icon-policycheck"></use>
+            </svg>
+            <span class="checkbox-icon"></span>
+            <p class="policy-label">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></p>
+        </label>
+        
+        <button class="form-button" type="submit">Отправить</button>
     </form>
     </div>
 </div>
+        <!-- Скріпт на модальне вікно -->
 <script src="./js/modal.js"></script>
 </body>
 </html>
