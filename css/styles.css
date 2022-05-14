@@ -185,12 +185,16 @@ margin-left: 93px;
 }
 
 .button {
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
     margin: 0 auto;
     display: block;
     text-align: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
 
     color:#ffffff;
     background-color: var(--accent-color);  
@@ -198,7 +202,7 @@ margin-left: 93px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-
+    border-radius: 4px;
     cursor: pointer;
     border: none;
 }
@@ -597,12 +601,15 @@ address {
     width: 200px;
     height: 50px;
 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: #FFFFFF;
+    background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    color: #FFFFFF;
-    background-color:#2196F3;
-
     cursor: pointer;
 }
 
@@ -651,6 +658,7 @@ address {
     margin-top: 8px;
     width: 30px;
     height: 30px;
+    background-color: #FFFFFF;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -660,7 +668,7 @@ address {
     width: 11px;
     height: 11px;
     fill: rgb(0, 0, 0);
-
+    
     transition: fill var(--const-transition-duration) var(--const-transition-timing-function);
 }
 
@@ -778,9 +786,10 @@ address {
 }
 
 .checkbox:checked + .checkbox-icon {
+    background-origin: border-box;
     background-color: #2196F3;
     background-size: contain;
-    border: none;
+    border: #2196F3;
 }
 
 .policy-label {
@@ -801,6 +810,10 @@ address {
     margin: 30px auto 40px;
     width: 200px;
     height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
 
     color: #FFFFFF;
     background-color: #2196F3;
